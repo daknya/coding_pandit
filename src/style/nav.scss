@@ -1,0 +1,42 @@
+.maincnt {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f1f1;
+    align-items: center;
+    height: 6vh;
+    padding: 5rem 6rem;
+    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    .linkcnt {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+
+        li {
+            text-decoration: none;
+            list-style: none;
+
+            .Items {
+                text-decoration: none;
+                color: rgb(75, 75, 75);
+                font-size: 1rem;
+                font-weight: 100;
+                letter-spacing: -1%;
+            }
+
+
+        }
+
+    }
+
+    .logo {
+        img {
+            height: 50px;
+            width: 110px;
+        }
+
+        color: #323232;
+    }
+}

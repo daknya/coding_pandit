@@ -1,0 +1,64 @@
+.hero {
+    padding: 0 6rem;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../media/img/wave.svg);
+
+
+    .left-element {
+        align-self: self-start;
+        color: #552701;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 200;
+            letter-spacing: -1%;
+            line-height: 1.3rem;
+
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 500;
+
+
+
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .right-element {
+        button {
+            border: none;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            width: 12rem;
+            height: 2.3rem;
+            color: #f5f5f5;
+            cursor: pointer;
+            background-color: #b15204;
+        }
+    }
+}
+
+.spacer {
+    aspect-ratio: 960/200;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer {
+    background-image: url(../media/img/wave.svg);
+}
