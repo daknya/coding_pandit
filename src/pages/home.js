@@ -4,11 +4,14 @@ import Navbar from "../components/navb";
 import Gallery from "../components/gallery";
 import Footer from "../components/footer"
 import Updates from "../components/Update";
+import "../style/home.scss"
 function Home() {
     return (
         <>
-            <Navbar />
-            <Hero />
+            <div className="homenh">
+                <Navbar />
+                <Hero />
+            </div>
             <Updates />
 
             <Gallery />

@@ -1,52 +1,64 @@
 .hero {
-    padding: 0 6rem;
-    height: 83vh;
+    padding: 0 9rem;
+    height: 80vh;
     display: flex;
+    background-color: var(--background);
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #ffffff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../media/img/wave.svg);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
     .left-element {
         align-self: self-start;
-        color: #552701;
 
         h3 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 200;
             letter-spacing: -1%;
             line-height: 1.3rem;
+            padding-bottom: 7px;
+            color: rgb(54, 53, 53);
+            font-family: inherit;
+            padding-left: 19px;
+            // border-bottom: 1px solid var(--primary-text);
 
         }
 
         h1 {
-            font-size: 3.5rem;
-            font-weight: 500;
-
-
-
+            font-size: 5rem;
+            // color: var(--primary-text);
+            font-family: inherit;
+            text-transform: capitalize; // box-shadow: 2px 1px 2px rgba(180, 180, 180, .7), inset 3px 2px 5px rgba(255, 255, 255, 1);
+            font-weight: 400;
         }
 
-        p {
-            font-size: 1rem;
+        .aboutp {
+            padding-top: 6px;
+            // border-top: 10px double black;
+            color: rgb(92, 92, 92);
+            padding-left: 19px;
+
+            font-size: 1.2rem;
+            font-family: inherit;
+
         }
     }
 
     .right-element {
-        button {
-            border: none;
-            border-radius: 20px;
-            font-size: 1.2rem;
-            width: 12rem;
-            height: 2.3rem;
-            color: #f5f5f5;
-            cursor: pointer;
-            background-color: #b15204;
+        .btn {
+            letter-spacing: .03em;
+            white-space: nowrap;
+            border: 0;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            color: var(--primary-text);
+            padding: 0.5rem 2rem;
+            color: var(--background);
+            background-color: var(--primary);
+            // text-shadow: 1px 1px 1px #fff;
+            box-shadow: 2px 1px 2px rgba(180, 180, 180, .7), inset 3px 2px 5px rgba(255, 255, 255, 1);
         }
     }
 }
@@ -57,8 +69,4 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.layer {
-    background-image: url(../media/img/wave.svg);
 }
