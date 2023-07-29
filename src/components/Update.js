@@ -2,42 +2,79 @@ import React from "react";
 import "../style/update.scss";
 
 const Updates = () => {
-    return (
-        <>
-            <div className="head">   <h1> upcomming events</h1></div>
+    const news = [
+        {
+            id: "1",
+            date: '12-01-11',
+            time: "4:30",
+            venue: "tel center",
+            linl: 'google.com',
+            description: "daknya"
+        },
+        {
+            id: "2",
+            date: '12-01-11',
+            linl: 'google.com',
+            time: "4:30",
+            venue: "tel center",
+            description: "alimuni talk puru shottam"
+        },
+        {
+            id: "2",
+            linl: 'go.com',
+            date: '12-01-11',
+            time: "5:50",
+            venue: "cse block",
+            description: "speech by chandrashker"
+        }
 
-            <div className="newcontainer">
-                <div className="mover">
+    ]
 
-                    <div className="items">
-                        <span className="data"> 14th sep</span>
-                        <span className="event"> hackathon </span>
-                        <span className="venue" > telcenter</span>
-                        <button className="btn" > register</button>
+
+
+
+    
+
+    const Newsitems = () => {
+
+        return news.map((items, index) => {
+            return (
+                <div className="items">
+                    <div><p>
+
+                        <span className="data"> {items.date}{items.time}</span>
+                        <span className="event"> {items.description} </span>
+                        <span className="venue" > {items.venue}</span>
+                    </p>
                     </div>
-                    <div className="items">
-                        <span className="data"> 12th sep</span>
-                        <span className="event"> hackathon </span>
-                        <span className="venue" > telcenter</span>
-                        <button className="btn" > register</button>
-
-                    </div><div className="items">
-                        <span className="data"> 11th sep</span>
-                        <span className="event"> hackathon </span>
-                        <span className="venue" > telcenter</span>
-                        <button className="btn" > register</button>
-
-                    </div>
-                    <div className="items">
-                        <span className="data"> 11th sep</span>
-                        <span className="event"> hackathon </span>
-                        <span className="venue" > telcenter</span>
-                        <button className="btn" > register</button>
-
-                    </div>
+                    <button className="btn" >{items.link}</button>
                 </div>
 
+            )
+
+        }
+        )
+
+
+    }
+
+
+
+    console.log(typeof (items))
+    return (
+        <><div className="allnews">
+
+            <div className="head">
+                <h1> events</h1>
+
             </div>
+            <div className="newcontainer">
+                <Newsitems />
+            </div>
+        </div>
+
+
+
         </>
     )
 
