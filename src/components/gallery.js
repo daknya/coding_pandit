@@ -8,17 +8,14 @@ const Gallery = () => {
             <div className="gallery">
 
                 <h1>
-                    our family
-
+                    Join us and Laugh ,smile, code  with US
+                    <hr />
                 </h1>
-
-                <div className="about left">
-                    <h2> we are the coding pandits </h2>
-                    <p> a community</p></div>
-                <div className="images right">
-
+                <div className="photos">
 
                 </div>
+
+
             </div>
         </>
     )
