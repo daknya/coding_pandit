@@ -5,7 +5,10 @@ import Gallery from "../components/gallery";
 import Footer from "../components/footer"
 import Updates from "../components/Update";
 import "../style/home.scss"
+import EventOrganised from "../components/organised";
 function Home() {
+
+
     return (
         <>
             <div className="homenh">
@@ -13,6 +16,7 @@ function Home() {
                 <Hero />
             </div>
             <Updates />
+            <EventOrganised />
 
             <Gallery />
             <Footer />
