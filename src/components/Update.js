@@ -8,24 +8,29 @@ const Updates = () => {
             date: '12-01-11',
             time: "4:30",
             venue: "tel center",
-            linl: 'google.com',
+            link: 'google.com',
+            author: "daknya",
+
             description: "daknya"
         },
         {
             id: "2",
             date: '12-01-11',
-            linl: 'google.com',
+            link: 'google.com',
             time: "4:30",
+            author: "Puru don",
+
             venue: "tel center",
-            description: "alimuni talk puru shottam"
+            description: "Alimuni talk Google Ceo Purushottam"
         },
         {
-            id: "2",
-            linl: 'go.com',
+            id: "3",
+            link: 'go.com',
             date: '12-01-11',
             time: "5:50",
             venue: "cse block",
-            description: "speech by chandrashker"
+            author: "Chandrashaker",
+            description: "speech by Chandrashker"
         }
 
     ]
@@ -33,21 +38,27 @@ const Updates = () => {
 
 
 
-    
+
 
     const Newsitems = () => {
 
         return news.map((items, index) => {
             return (
-                <div className="items">
-                    <div><p>
-
-                        <span className="data"> {items.date}{items.time}</span>
-                        <span className="event"> {items.description} </span>
-                        <span className="venue" > {items.venue}</span>
-                    </p>
+                <div className="items" key={news.id}>
+                    <div className="info">
+                        <span className="data"> {items.date} {items.time} </span>
+                        <span className="event"> {items.author} </span>
+                        <span className="venue" > {items.venue} </span>
                     </div>
-                    <button className="btn" >{items.link}</button>
+                    <hr />
+                    <div className="description">
+                        <h3 className="event"> {items.description} </h3>
+                        <a href={items.linl}>
+                            <button className="btn">
+                                Register
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
             )
@@ -65,7 +76,7 @@ const Updates = () => {
         <><div className="allnews">
 
             <div className="head">
-                <h1> events</h1>
+                <h1> Events</h1>
 
             </div>
             <div className="newcontainer">
