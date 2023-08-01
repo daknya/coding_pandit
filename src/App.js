@@ -8,6 +8,19 @@ import Register from './pages/register'
 import './style/index.scss'
 
 function App() {
+
+  window.addEventListener('scroll', setScrollVar);
+  window.addEventListener('resize', setScrollVar);
+
+
+  function setScrollVar() {
+    const htmlElement = document.documentElement;
+    const PercentageOfScreenHeightScrolled = htmlElement.scrollTop / htmlElement.clientHeight;
+
+    htmlElement.style.setProperty("--scroll", Math.min(PercentageOfScreenHeightScrolled * 100, 100))
+  }
+  setScrollVar();
+
   return (
     <>
       <Router>
