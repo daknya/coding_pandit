@@ -1,0 +1,40 @@
+.events {
+    background-color: #2a2a2a;
+    padding: 6rem 6rem;
+    height: 100vh;
+    border-radius: 13px;
+
+    h1 {
+        color: aliceblue;
+        font-size: 4rem;
+        padding: 2rem 0;
+    }
+
+    .amazing {
+        width: 100%;
+
+        .items {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                padding: 3rem 0;
+                font-size: 3rem;
+                color: rgb(213, 213, 213);
+
+            }
+
+            p {
+                font-size: 2rem;
+                color: rgb(213, 213, 213);
+
+            }
+        }
+
+
+    }
+
+}

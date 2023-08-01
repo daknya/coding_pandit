@@ -8,23 +8,17 @@ class Hero extends Component {
       <>
         <div className="hero">
           <div className="left-element">
-            <h3> We are</h3>
-            <h1> Coding Pandit</h1>
-            <div className="aboutp">
-              -
-              <p> We are an enthusiastic group of coders from National Institute of Technology, Arunachal Pradesh.</p>
-              <p> We want to replace code fear with inspiration and motivation to learn. We believe that coding can</p>
-              <p> be really fun and also understand the importance of quantitative skills for professional development.</p>
-              -
-            </div>
+
+            <h1>Puru's word</h1>
+            <h1>Wrong</h1>
+            <h1>Life</h1>
+            <h1>Interesting</h1>
           </div>
 
           <div className="right-element ">
             <button className="btn"> Join us </button>
           </div>
-          <div className="scroll"></div>
-          {/* <div className="spacer layer" >
-          </div> */}
+
         </div>
 
       </>
