@@ -1,6 +1,9 @@
-import React from "react";
+import { useRef, React, useEffect, useState } from "react";
 import "../style/update.scss";
 
+
+import { useInView } from "react-intersection-observer"
+import { isVisible } from "@testing-library/user-event/dist/utils";
 const Updates = () => {
     const news = [
         {
@@ -36,6 +39,18 @@ const Updates = () => {
     ]
 
 
+    //to detect an element
+    const [myelementisVisible, setmyelementisVisible] = useState();
+    console.log(myelementisVisible);
+    const myref = useRef();
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setmyelementisVisible(entry.isIntersecting);
+
+        })
+        observer.observe(myref.current);
+    }, [])
 
 
 
@@ -76,8 +91,7 @@ const Updates = () => {
         <><div className="allnews">
 
             <div className="head">
-                <h1> Events</h1>
-
+                <h1 ref={myref} > Events</h1>
             </div>
             <div className="newcontainer">
                 <Newsitems />

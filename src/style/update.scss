@@ -60,4 +60,18 @@
         font-size: 3rem;
     }
 
+    .unanimateNews {
+        filter: blur(5px);
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all 1.8s ease;
+    }
+
+    .animateNews {
+
+        filter: blur(0);
+        transform: translateX(0%);
+        opacity: 1;
+
+    }
 }
