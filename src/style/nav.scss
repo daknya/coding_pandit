@@ -98,4 +98,14 @@
             margin: 2px;
         }
     }
+
+    @media screen and (max-width : 600px) {
+        .social {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+        }
+    }
 }

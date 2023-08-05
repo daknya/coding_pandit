@@ -1,5 +1,5 @@
 .homenh {
     position: sticky;
     top: 0;
-    translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 60);
+    translate: 0 calc(-1% * (max(var(--scroll), 30) - 30) * 100 / 60);
 }

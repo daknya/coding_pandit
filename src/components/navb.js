@@ -12,10 +12,12 @@ const Navbar = () => {
 
     function open() {
         const menu = document.getElementById('menu');
-
         menu.classList.toggle("toggleclass");
     }
+    // const stickymenu = document.getElementById('open');
 
+
+    // console.log("clint bottom is" + stickymenu.clientBottom);
     return (
         <>
             <div className='maincnt'>

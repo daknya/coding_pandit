@@ -17,7 +17,7 @@ function App() {
     const htmlElement = document.documentElement;
     const PercentageOfScreenHeightScrolled = htmlElement.scrollTop / htmlElement.clientHeight;
 
-    htmlElement.style.setProperty("--scroll", Math.min(PercentageOfScreenHeightScrolled * 100, 100))
+    htmlElement.style.setProperty("--scroll", PercentageOfScreenHeightScrolled * 100)
   }
   setScrollVar();
 
