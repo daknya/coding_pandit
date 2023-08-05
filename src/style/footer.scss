@@ -1,6 +1,40 @@
 .footer {
-    background-color: black;
+    background-color: var(--primary-text);
+    border-radius: 15px;
     color: white;
+
+    .footercnt {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3rem 6rem;
+
+        .extlink {
+            ul {
+                li {
+
+                    list-style: none;
+                    color: white;
+                    margin: 1rem;
+
+                    a {
+                        text-decoration: none;
+                        color: aliceblue;
+                        font-size: 1.3rem;
+
+                    }
+                }
+            }
+        }
+
+        .contacts {
+            font-size: 1.3rem;
+
+        }
+
+        .other {
+            font-size: 1.3rem;
+        }
+    }
 
     .credit {
         text-align: center;
