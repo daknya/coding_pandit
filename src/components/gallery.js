@@ -30,7 +30,7 @@ const Gallery = () => {
 
                 </div> */}
                 <h1>
-                    Join us and Laugh ,smile, code  with US
+                    Join and Laugh ,smile, code  with US
                     <hr />
                 </h1>
                 {/* <div className="topImgs">

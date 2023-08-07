@@ -13,6 +13,7 @@ const Navbar = () => {
     function open() {
         const menu = document.getElementById('menu');
         menu.classList.toggle("toggleclass");
+        document.body.classList.toggle("toggleoverflow");
     }
     // const stickymenu = document.getElementById('open');
 

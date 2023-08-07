@@ -1,9 +1,9 @@
 :root {
-    --background: #111111;
-    --primary: #4646e2;
-    --secondary: #cfcfcf;
-    --accent: #ffff61;
-    --primary-text: #1a1a1a;
+    --background: #010304;
+    --primary: #33668a;
+    --secondary: #070e13;
+    --accent: #3e7ca8;
+    --primary-text: #e5eff5;
     --accent2: #5b3caa;
     --background-opacity: calc(100% - 1% * (min(var(--scroll), 70)) * 100 / 50)
 }
@@ -18,4 +18,13 @@
     padding: 0;
     box-sizing: border-box;
 
+}
+
+body {
+    background-color: var(--background);
+    overflow-x: hidden;
+
+    hr {
+        border: var(--accent) 1px solid;
+    }
 }

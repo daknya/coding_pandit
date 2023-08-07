@@ -1,5 +1,5 @@
 .gallery {
-    background-color: #f1f1f1;
+    background-color: var(--accent);
     padding: 6rem 6rem;
     height: 100vh;
     margin: auto auto;
@@ -32,7 +32,7 @@
     }
 
     h1 {
-        color: #363636;
+        color: var(--primary-text);
         font-size: 4rem;
         padding: 2rem 0;
     }

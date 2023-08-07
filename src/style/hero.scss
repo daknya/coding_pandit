@@ -1,10 +1,10 @@
 .hero {
     padding: 0 9rem;
-    height: 80vh;
+    height: 90vh;
     display: flex;
-    background: #f1f1f1;
+    background: var(--background);
     // background: url("../media/img/turkey-g8fb13eec2_1920.jpg"), rgb(13, 12, 12, 0.7);
-    opacity: var(--background-opacity);
+    // opacity: var(--background-opacity);
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -50,8 +50,7 @@
 
         h1 {
             font-size: 5rem;
-            // color: var(--primary-text);
-
+            color: var(--primary-text);
             font-family: inherit;
             text-transform: capitalize; // box-shadow: 2px 1px 2px rgba(180, 180, 180, .7), inset 3px 2px 5px rgba(255, 255, 255, 1);
             font-weight: 400;
@@ -127,9 +126,9 @@
             color: var(--primary-text);
             padding: 0.5rem 2rem;
 
-            background-color: #f1f1f1;
+            background-color: var(--background);
             // text-shadow: 1px 1px 1px #fff;
-            box-shadow: 2px 1px 2px rgba(180, 180, 180, .7), inset 3px 2px 5px rgba(255, 255, 255, 1);
+            box-shadow: 1px 1px 1px rgba(180, 180, 180, .7), inset 1px 1px 1px rgba(255, 255, 255, 1);
         }
     }
 }
